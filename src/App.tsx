@@ -1,9 +1,12 @@
 // IMPORTANDO COMPONENTE
 import FirstComponent from "./components/FirstComponent";
 
+// COMPONENTE COM PROPS
+import SecondComponent from "./components/SecondComponent";
+
 function App() {
   // VARIAVEIS
-  const name: string = "Átila";
+  const name: string = "Marcus";
   const age: number = 25;
   const isWorking: boolean = false;
 
@@ -37,6 +40,9 @@ function App() {
 
       {/* COMPONENTE SIMPLES */}
       <FirstComponent />
+
+      {/* COMPONENTE COM PROPS */}
+      <SecondComponent name="Blue" />
     </div>
   );
 }
