@@ -4,6 +4,9 @@ import FirstComponent from "./components/FirstComponent";
 // COMPONENTE COM PROPS
 import SecondComponent from "./components/SecondComponent";
 
+// COMPONETE COM DESESTRUTURAÇÃO DE PROPS
+import Destructuring from "./components/Destructuring";
+
 function App() {
   // VARIAVEIS
   const name: string = "Marcus";
@@ -43,6 +46,21 @@ function App() {
 
       {/* COMPONENTE COM PROPS */}
       <SecondComponent name="Blue" />
+
+      {/* COMPONETE COM DESESTRUTURAÇÃO DE PROPS */}
+      <Destructuring
+        title="Primeiro post"
+        content="Algum conteúdo"
+        commentQty={10}
+        tags={["TS", "JS"]}
+      />
+
+      <Destructuring
+        title="Segundo post"
+        content="Mais outro conteúdo"
+        commentQty={5}
+        tags={["Python", "Java", "PHP", "Ruby"]}
+      />
     </div>
   );
 }
