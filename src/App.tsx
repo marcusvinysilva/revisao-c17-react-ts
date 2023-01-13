@@ -7,6 +7,9 @@ import SecondComponent from "./components/SecondComponent";
 // COMPONETE COM DESESTRUTURAÇÃO DE PROPS
 import Destructuring from "./components/Destructuring";
 
+// HOOK useState
+import State from "./components/State";
+
 function App() {
   // VARIAVEIS
   const name: string = "Marcus";
@@ -61,6 +64,8 @@ function App() {
         commentQty={5}
         tags={["Python", "Java", "PHP", "Ruby"]}
       />
+
+      <State />
     </div>
   );
 }
