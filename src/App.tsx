@@ -5,7 +5,7 @@ import FirstComponent from "./components/FirstComponent";
 import SecondComponent from "./components/SecondComponent";
 
 // COMPONETE COM DESESTRUTURAÇÃO DE PROPS
-import Destructuring from "./components/Destructuring";
+import Destructuring, { Category } from "./components/Destructuring";
 
 // HOOK useState
 import State from "./components/State";
@@ -56,6 +56,7 @@ function App() {
         content="Algum conteúdo"
         commentQty={10}
         tags={["TS", "JS"]}
+        category={Category.JS}
       />
 
       <Destructuring
@@ -63,6 +64,7 @@ function App() {
         content="Mais outro conteúdo"
         commentQty={5}
         tags={["Python", "Java", "PHP", "Ruby"]}
+        category={Category.TS}
       />
 
       <State />
