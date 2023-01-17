@@ -67,6 +67,7 @@ function App() {
         category={Category.TS}
       />
 
+      {/* HOOK useState */}
       <State />
     </div>
   );
