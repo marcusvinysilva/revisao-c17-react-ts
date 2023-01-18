@@ -14,6 +14,12 @@ import State from "./components/State";
 import { createContext } from "react";
 import Context from "./components/Context";
 
+// HOOK useEffect
+import Effect from "./components/Effect";
+
+// STYLED COMPONENTS
+import Styled from "./components/Styled";
+
 // TYPES
 type textOrNull = string | null;
 type lang = "javascript" | "typescript" | "java";
@@ -46,7 +52,6 @@ function App() {
   }
 
   // TYPES
-
   const myText: textOrNull = "um texto qualquer";
   let mySecondText: textOrNull = null;
 
@@ -110,6 +115,12 @@ function App() {
 
         {/* CONTEXT API */}
         <Context />
+
+        {/* HOOK useEffect */}
+        <Effect />
+
+        {/* STYLED COMPONENTS */}
+        <Styled />
       </div>
     </AppContext.Provider>
   );
